@@ -3,29 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [EaseMyTripAutomationSuite]">
   <test thread-count="5" name="EaseMyTripTestCases(failed)">
     <classes>
-      <class name="com.easemytrip.qa.tests.LoginPageTest">
-        <methods>
-          <include name="loginPagetTest"/>
-          <include name="loginPageTitleTest"/>
-          <include name="teardown"/>
-          <include name="SetUp"/>
-        </methods>
-      </class> <!-- com.easemytrip.qa.tests.LoginPageTest -->
-      <class name="com.easemytrip.qa.tests.RegistrationPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="validateRegistrationTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.easemytrip.qa.tests.RegistrationPageTest -->
       <class name="com.easemytrip.qa.tests.HomePageTest">
         <methods>
           <include name="teardown"/>
           <include name="validateMenuTabs"/>
           <include name="Setup"/>
-          <include name="validateSearchFlight"/>
-          <include name="usrLogOutTest"/>
-          <include name="validateuserlogo"/>
         </methods>
       </class> <!-- com.easemytrip.qa.tests.HomePageTest -->
     </classes>
