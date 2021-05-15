@@ -65,7 +65,7 @@ public class Emtusermenuhover extends Testbase {
     	logOutOptn.click();
     	
     	TestUtil tu = new TestUtil();
-    	tu.clickOkAlert();
+    	//tu.clickOkAlert();
     	
     	return new Emtloginpage();
     	
