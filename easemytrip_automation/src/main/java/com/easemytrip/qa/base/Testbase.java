@@ -13,6 +13,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Parameters;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Testbase {
 	
 	public Properties prop;
@@ -44,7 +46,7 @@ public class Testbase {
 		
 		if (browser.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\Study\\Naveen Automation\\Latest chrome driver version 84\\chromedriver_win32\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
 			
@@ -53,13 +55,13 @@ public class Testbase {
 		}
 		else if(browser.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "D:\\Study\\Naveen Automation\\Latest Gecko driver\\geckodriver-v0.26.0-win64\\geckodriver.exe");	
+			WebDriverManager.firefoxdriver().setup();		
 			driver = new FirefoxDriver();
 			
 		}
 		else if(browser.equals("InternetExplorer"))
 		{
-			System.setProperty("webdriver.ie.driver", "D:\\Study\\Naveen Automation\\Latest IE driver\\IEDriverServer_x64_2.48.0\\IEDriverServer.exe");	
+			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 			
 		}
