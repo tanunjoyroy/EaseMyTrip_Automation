@@ -21,7 +21,7 @@ public class TestUtil extends Testbase {
 	public static ArrayList<Object[]> readExcelData()
 	{
 		ArrayList<Object[]> arr = new ArrayList<Object[]>(); //we should always define the type as Object as the data to be read from excel sheet could b of any type.
-		reader = new ExcelUtil("D:\\Study\\Naveen Automation\\Workspace\\easemytrip_automation\\src\\main\\java\\com\\easemytrip\\qa\\data\\EaseMyTripTestData.xlsx");
+		reader = new ExcelUtil("src/main/java/com/easemytrip/qa/data/EaseMyTripTestData.xlsx");
 		
 		int rowCount = reader.getRowCount("SearchFlightData");
 		
