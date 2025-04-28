@@ -47,7 +47,13 @@ public class Testbase {
 		if (browser.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			
+			driver = new ChromeDriver(options);
 			
 			
 			
