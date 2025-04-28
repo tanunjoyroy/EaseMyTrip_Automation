@@ -47,7 +47,7 @@ public class Testbase {
 		
 		if (browser.equals("chrome"))
 		{
-			WebDriverManager.chromedriver().browserVersion("135").setup();
+			WebDriverManager.chromedriver().setup();
 
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
