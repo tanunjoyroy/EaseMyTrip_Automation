@@ -25,7 +25,7 @@ public class Testbase {
 		
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("D:\\Study\\Naveen Automation\\Workspace\\easemytrip_automation\\src\\main\\java\\com\\easemytrip\\qa\\config\\configvars.properties");
+			FileInputStream ip = new FileInputStream("src/main/java/com/easemytrip/qa/config/configvars.properties");
 			prop.load(ip);
 		} 
 		catch (FileNotFoundException e) {
