@@ -31,7 +31,7 @@ public class LoginPageTest extends Testbase {
 	{
 		
 		String Actualtitle = loginpg.validateLoginPageTitle();
-		Assert.assertEquals(Actualtitle, "Book Flights, Hotels, Bus Tickets & Holidays - EaseMyTrip.com");
+		Assert.assertEquals(Actualtitle, "EaseMyTrip.com - Book Flights, Hotels, Holidays, Bus & Train Tickets");
 	}
 	
 	
